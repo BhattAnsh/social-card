@@ -5,6 +5,7 @@ import insta from './instagram.png'
 import linkedin from './linkedin.png'
 import twitter from './twitter.png'
 import mail from './social.png'
+import git from './github.png'
 function LandingCard() {
   return (
     <div className='card-container'>
@@ -42,6 +43,11 @@ function LandingCard() {
             </div>
             <div className='col r3-col-2'>
               <a href='mailto:anshbhatt140@gmail.com'><img src={mail} alt='mail'></img> Mail</a>
+            </div>
+          </div>
+          <div className='row fourth-row'>
+            <div className='col r4-col-1'>
+              <a href='https://github.com/BhattAnsh'><img src={git} alt='github'></img>BhattAnsh</a>
             </div>
           </div>
         </div>

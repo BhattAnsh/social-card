@@ -99,6 +99,7 @@ body {
     .card-container {
         width: 90%;
         max-width: 90%;
+        height: 90%;
         overflow:scroll;
     }
     .col a{
@@ -111,6 +112,7 @@ body {
         align-items: center;
         column-gap: 0;
         padding: 10px;
+        align-items: center;
     }
     .link-container{
         row-gap: 0;
