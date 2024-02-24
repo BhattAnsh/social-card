@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+}
+:root {
+    --primary-color: #082032;
+    --secondry-color: #2C394B;
+    --tirtiary-color: #334756;
+    --quaternary-color: #D2D2D2;
+    --fifth-color: #FF4C29;
+    --glass-finish: #d2d2d29f;
+}
+
+body {
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10%;
+    width: 500px;
+    height: 550px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 20px;
+}
+
+.profile-container{
+    display: flex;
+    border-radius: 16px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 21px;
+    padding: 20px;
+    margin: 0;
+    color: var(--primary-color);
+    background-color: var(--quaternary-color);
+}
+.profile{
+    border-radius: 100%;
+    width: 100px;
+}
+.link-container, .all_social{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+    padding:20px ;
+    background-color:var(--secondry-color);
+    border-radius: 16px;
+}
+.all_social{
+    padding: 0;
+    width: 100%;
+}
+.social-heading{
+    margin: 0px;
+    color: white;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-between;
+}
+.col{
+    display: flex;
+    flex-direction: row;
+    width: 45%;
+    background-color: var(--quaternary-color);
+    border-radius: 16px;
+    padding: 5px;
+    align-content: center;
+    align-items: center;
+    column-gap: 10px;
+}
+.col img{
+    width: 50px;
+}
+.col a{
+    color: var(--primary-color);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    .card-container {
+        width: 90%;
+        max-width: 90%;
+        overflow:scroll;
+    }
+    .col a{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-container {
+        flex-direction: column;
+        align-items: center;
+        column-gap: 0;
+        padding: 10px;
+    }
+    .link-container{
+        row-gap: 0;
+    }
+    .all_social{
+        row-gap: 0;
+    }
+
+    .profile {
+        width: 80px;
+    }
+
+    .row,
+    .col {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .col {
+        margin-bottom: 10px;
+    }
+}
