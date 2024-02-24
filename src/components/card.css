@@ -133,4 +133,10 @@ body {
     .col {
         margin-bottom: 10px;
     }
+    .details{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
