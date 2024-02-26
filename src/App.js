@@ -1,10 +1,10 @@
 import './App.css';
-import LandingCard from './components/card';
+import LinkCard from './components/card-2/card';
 
 function App() {
   return (
     <>
-      <LandingCard/>
+      <LinkCard/>
       
     </>
 
